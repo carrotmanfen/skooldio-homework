@@ -10,8 +10,8 @@ describe('Pok Deng Game', () => {
       const deck = createDeck();
       const originalDeck = [...deck];
       shuffle(deck);
-      expect(deck).not.toEqual(originalDeck); // Deck order should change after shuffling
-      expect(deck).toHaveLength(52); // Deck length should remain the same
+      expect(deck).not.toEqual(originalDeck); 
+      expect(deck).toHaveLength(52);
     });
   
     test('should draw a card from the deck', () => {
